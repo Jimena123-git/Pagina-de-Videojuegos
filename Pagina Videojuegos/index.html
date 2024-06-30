@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina de Videosjuegos</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="/images/game-controller.png" type="image/png">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+
+    <body>
+        <header>
+            <img class="Logo" id="logo" src="images/videojuego.png" alt="Logo">
+
+            <div class="nav-icon">
+                <a href="#" id="user-btn" type="button"><i class='bx bxs-user'></i></a>
+                    <div id="personas" style="display: none;">
+                        <label for="lista-personas">Seleccione una cuenta:</label>
+                        <!-- Combo-lista de selección de personas -->
+                        <select id="lista-personas"></select>
+                    </div>
+                <a href="#" id="cart" type="button"><i class='bx bx-cart'></i></a>
+                    <div id="carrito" style="display: none;">
+                        <label>Carrito:</label>
+                        <p>Total de juegos: <span id="totalJuegos"></span></p>
+                        <p>Total: <span id="totalCompra"></span></p>
+                        <button id="comprar">Comprar</button>
+                    </div> 
+            </div>
+        </header>
+
+        
+        <p><a href="./pages/crud.html" >Ir a Alta</a></p>
+        <p><a href="./pages/estadisticas.html">Ir a Estadisticas</a></p>
+     
+     
+      <main>
+            <h1>Juegos disponibles</h1>
+            
+            <div id="Container" class="container">
+            
+                <!-- Juegos -->
+            </div>
+        </main>
+        <!-- <script type="module" src="./javascript/script.js"></script> -->
+        <script type="module" defer src="./javascript/script.js"></script>
+        <script type="module" defer src="./javascript/array.js"></script>
+        <script type="module" defer src="./javascript/clases.js"></script>
+        
+    </body>
+</html>
